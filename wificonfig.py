@@ -7,7 +7,7 @@ class WifiConnect():
         try:
             wifi = network.WLAN(network.STA_IF)
             wifi.active(True)
-            wifi.connect('CLARO_9Wj2hd', 'fuentesgomez2022')
+            wifi.connect('NAMESSID', 'PASSWORD')
             while wifi.isconnected() == False:
                 print('Wifi esta esperando conexión...')
                 sleep(1)
